@@ -1,0 +1,23 @@
+server:
+  port: 8090
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+
+
+mongodb:
+  primary:
+    authenticationDatabase: admin
+    database: hr_db1
+    host: localhost
+    password: password
+    port: 27017
+    username: admin
+  secondary:
+    authenticationDatabase: admin
+    database: commercial_db1
+    host: localhost
+    password: password
+    port: 27017
+    username: admin
